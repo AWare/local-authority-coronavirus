@@ -22,7 +22,7 @@ const websites = urls[currentAuthority]
       <p>Search for your local council below, if you don't know who your local council is, it's probably written on the bins. Otherwise, <a href="https://www.gov.uk/find-local-council"> please use this tool to find out</a>.</p>
 			<Autocomplete id='autocomplete' source={suggest} onConfirm={(_) => {
 				if(_)	setCurrentAuthority(_)
-			}} />
+			}} autoselect={true} confirmOnBlur={true} />
 	
       {currentAuthority && <>
         <p>For {currentAuthority} we found:</p>
