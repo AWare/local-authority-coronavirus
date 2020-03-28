@@ -30,7 +30,10 @@ const websites = urls[currentAuthority]
           {websites.map(url => <li><a href={url}>{url}</a></li>)}
         </ul>
       </>}
-      
+
+      <p>This website is open source, and lives in this <a href="https://github.com/AWare/local-authority-coronavirus">github repository</a>.
+        If you notice any issues, please contact me there. </p>
+            
 		</div>
 	)
 }
