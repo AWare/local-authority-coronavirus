@@ -17,7 +17,7 @@ const { execSync } = require('child_process');
       console.error(re.exec(line))
     }
   }
-  fs.writeFileSync("../councils.js", `
+  fs.writeFileSync("./src/councils.js", `
   export const urls = ${JSON.stringify(urls, undefined, 2)}
   `);
   const missing = authorities.map(_ => _.label).filter(authority => !urls[authority])
